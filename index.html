@@ -17,33 +17,46 @@
 </head>
 <body>
   <main class="calculator">
-    <div class="form">
+
+    <section class="form-section">
     <h1>Mortgage Calculator</h1>
-      Clear All
-    <form>
-      <label for="mortgage-amount">Mortgage Amount</label>
-      <input type="number" id="mortgage-amount" name="mortgage-amount" placeholder="e.g. 250000">
-      <label for="mortgage-term">Mortgage Term</label>
-      <input type="number" id="mortgage-term" name="mortgage-term" placeholder="e.g. 30">
 
-      <label for="interest-rate">Interest Rate</label>
-      <input type="number" id="interest-rate" name="interest-rate" placeholder="e.g. 3.5">
+    <button type="reset" class="clear-btn">Clear All</button>
+    <form id="Mortgage-form">
 
-      <label for="mortgage-type"></label>Mortgage Type</label>
-      <select id="mortgage-type" name="mortgage-type">
-        <option value="repayment">Repayment</option>
-        <option value="interest-only">Interest Only</option>
-      </select>
-      Calculate Repayments
+      <div class="input">
+        <label for="mortgage-amount">Mortgage Amount</label>
+        <input type="number" id="mortgage-amount" name="mortgage-amount" placeholder="e.g. 250000" required>
+      </div>
+
+      <div class="input">
+        <label for="mortgage-term">Mortgage Term (years)</label>
+        <input type="number" id="mortgage-term" name="mortgage-term" placeholder="e.g. 30" required>
+      </div>
+
+      <div class="input">
+        <label for="interest-rate">Interest Rate (%)</label>
+        <input type="number" id="interest-rate" name="interest-rate" placeholder="e.g. 3.5" step="0.01" required>
+      </div>
+
+      <div class="input">
+        <label for="mortgage-type">Mortgage Type</label>
+        <select id="mortgage-type" name="mortgage-type">
+          <option value="repayment">Repayment</option>
+          <option value="interest-only">Interest Only</option>
+        </select>
+      </div>
+
+      <button type="submit" class="calculate-btn">Calculate Repayments</button>
+
     </form>
-    </div>
+    </section>
       <!-- Empty results start -->
-    <div class="results"> 
+    <section class="results-section" id="results"> 
       <h2>Results shown here</h2>
 
       <p>Complete the form and click “calculate repayments” to see what 
       your monthly repayments would be.</p>
-
       <!-- Empty results end -->
 
       <!-- Completed results start -->
@@ -58,11 +71,10 @@
       Total you'll repay over the term
 
       <!-- Completed results end -->
-    </div>
+    </section>
   </main>
     <!--<div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Jemima Lopez</a>.</div>-->
-  </div>
 </body>
 </html>
