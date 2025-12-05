@@ -32,8 +32,10 @@ body {
     box-shadow: 0px 10px 20px hsl(203, 41%, 72%);
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
 }
+
+
 
 .form {
     display: flex;
@@ -54,6 +56,21 @@ form {
     flex-direction: column;
     gap: 5px;
 }
+
+.btn-calculator {
+    background-color: hsl(61, 69%, 46%);  
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
 
 .results-section {
     display: flex;
