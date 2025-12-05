@@ -57,6 +57,17 @@ form {
     gap: 5px;
 }
 
+.clear-btn {
+    background: none;
+    border: none;
+    color: hsl(203, 41%, 72%);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
 .btn-calculator {
     background-color: hsl(61, 69%, 46%);  
     border: none;
