@@ -14,16 +14,18 @@
 
 body {
     background-color: hsl(202, 66%, 84%);
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     width: 60%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 .calculator {
     background-color: hsl(0, 0%, 100%);
     width: 80%;
+    height: 65%;
     border-radius: 25px;
     align-items: center;
     padding: 1rem;
@@ -33,6 +35,7 @@ body {
 }
 
 .form-section {
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -42,14 +45,18 @@ body {
 .mortgage-form {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 1rem;
     padding: 20px;
 }
 
-.form-section {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+input[type="number"] {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid hsl(202, 55%, 16%);
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(202, 86%, 94%);
+    gap: 1rem;
 }
 
 .clear-btn {
@@ -82,9 +89,9 @@ body {
     background-color: hsl(202, 55%, 16%);
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 0.5rem;
-    width: 100%;
+    gap: 1rem;
+    width: 50%;
+    height: 100%;
 }
 
 .results-section img {
