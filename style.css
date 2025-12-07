@@ -15,7 +15,7 @@
 body {
     background-color: hsl(202, 66%, 84%);
     height: 100vh;
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,21 +24,19 @@ body {
 
 .calculator {
     background-color: hsl(0, 0%, 100%);
-    width: 80%;
+    width: 100%;
     height: 65%;
     border-radius: 25px;
     align-items: center;
-    padding: 1rem;
     box-shadow: 0px 10px 20px hsl(203, 41%, 72%);
     display: flex;
-    gap: 20px;
+
 }
 
 .form-section {
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
     padding: 0.5rem;
 }
 
@@ -89,6 +87,13 @@ input[type="number"] {
     background-color: hsl(202, 55%, 16%);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 20%;
+    border-top-left-radius: none;
+    box-shadow: 0px 10px 20px hsl(203, 41%, 72%);
     gap: 1rem;
     width: 50%;
     height: 100%;
