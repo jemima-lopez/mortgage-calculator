@@ -28,17 +28,20 @@
         <label for="mortgage-amount">Mortgage Amount</label>
         <input type="number" id="mortgage-amount" name="mortgage-amount" placeholder=" " required>
       </div>
-
-      <div class="input">
-        <label for="mortgage-term">Mortgage Term (years)</label>
-        <input type="number" id="mortgage-term" name="mortgage-term" placeholder=" " required>
+      <label for="down-payment">Down Payment</label>
+        <input type="number" id="down-payment" name="down-payment" placeholder=" " required>
+        <div class="input-group">
+          <div class="input-box">
+              <label for="mortgage-term">Mortgage Term (years)</label>
+              <input type="number" placeholder=" " required>
+              <span class="suffix">years</span>
+          </div>
+        <div class="input-box">
+          <label for="interest-rate">Interest Rate (%)</label>
+          <input type="number" id="interest-rate" name="interest-rate" placeholder=" " step="0.01" required>
+          <span class="suffix">%</span>
+        </div>
       </div>
-
-      <div class="input">
-        <label for="interest-rate">Interest Rate (%)</label>
-        <input type="number" id="interest-rate" name="interest-rate" placeholder=" " step="0.01" required>
-      </div>
-
       <div class="radio-group">
         <label>Mortgage Type</label>
         <label class="radio-option">

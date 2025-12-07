@@ -114,26 +114,15 @@ input[type="number"] {
     cursor: pointer;
     transition: border-color 0.3s, background-color 0.3s;
 }
+
 .radio-option:hover {
     border-color: hsl(61, 69%, 46%);
     background-color: hsl(61, 69%, 96%);
 }
-.btn-calculator {
-    background-color: hsl(61, 69%, 46%);  
-    color: hsl(200, 43%, 19%);
-    border: none;
-    border-radius: 30px;
-    padding: 10px 30px;
-    font-size: 1rem;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.radio-option input[type="radio"] {
+    accent-color: hsl(61, 69%, 46%);
     cursor: pointer;
-    margin-top: 10px;
-}
-.btn-calculator img {
-    margin-right: 10px;
 }
 
 .results-section {
@@ -178,6 +167,30 @@ label {
     color: hsl(203, 41%, 72%);
     margin-bottom: 10px;
     font-weight: 600;
+}
+
+.input-group {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.btn-calculator {
+    background-color: hsl(61, 69%, 46%);  
+    color: hsl(200, 43%, 19%);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.btn-calculator img {
+    margin-right: 10px;
 }
 
 .results {
