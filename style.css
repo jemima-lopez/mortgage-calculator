@@ -33,10 +33,17 @@ body {
     justify-content: space-between;
 }
 
+.head {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    gap: 7rem;
+}
+
 h1 {
     color: hsl(202, 55%, 16%);
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 700;
     margin: 0;
 }
 
@@ -54,39 +61,63 @@ h1 {
 input[type="number"] {
     width: 100%;
     margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 10px;
+    margin-bottom: 0.3rem;
+    padding: 0.8rem;
     border-radius: 4px;
-    border: 1px solid hsl(202, 36%, 34%);
+    border: 1px solid hsl(203, 41%, 72%);
     font-size: 1rem;
     font-weight: 500;
     color: black;
     gap: 1rem;
 }
 
+.mortgage-form input[type="number"]::placeholder {
+    color: hsl(0, 0%, 4%);
+    font-weight: 900;
+}
+
 .clear-btn {
     background: none;
     border: none;
     border-bottom: 1px solid hsl(203, 41%, 72%);
-    color: hsl(203, 41%, 72%);
+    color: hsl(203, 46%, 66%);
     font-size: 0.9rem;
     font-weight: 600;
     cursor: pointer;
     align-self: flex-end;
-    margin-bottom: 10px;
 }
 
 .mortgage-form label {
     display: block;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
     color: hsl(202, 55%, 16%);
     margin: 20px 0 6px;
 }
-.mortgage-form input[type="number"]::placeholder {
-    color: hsl(203, 41%, 72%);
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
 }
 
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border: 0.063rem solid hsl(203, 41%, 72%);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: hsl(202, 55%, 16%);
+    cursor: pointer;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+.radio-option:hover {
+    border-color: hsl(61, 69%, 46%);
+    background-color: hsl(61, 69%, 96%);
+}
 .btn-calculator {
     background-color: hsl(61, 69%, 46%);  
     color: hsl(200, 43%, 19%);
