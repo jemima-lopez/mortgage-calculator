@@ -31,7 +31,7 @@
         <div class="input-group">
           <div class="input-box">
               <label for="mortgage-term">Mortgage Term (years)</label>
-              <input type="number" placeholder=" " required>
+              <input type="number" id="mortgage-term" name="mortgage-term" placeholder=" " required>
               <span class="suffix">years</span>
           </div>
           <div class="input-box">
@@ -48,7 +48,7 @@
           Repayment
           </label>
         <label class="radio-option">
-          <input type="radio" name="paymentType" value="interest">
+          <input type="radio" name="paymentType" value="interest-only">
           <span class="custom-radio"></span>
             Interest Only
         </label>
@@ -63,7 +63,7 @@
     </section>
 
       <!-- Empty results start -->
-    <section class="results-section"> 
+    <section class="results-section" id="results"> 
       <img src="./assets/images/illustration-empty.svg" alt="empty">
       <h2>Results shown here</h2>
       <p>Complete the form and click “calculate repayments” to see what 
