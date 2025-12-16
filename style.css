@@ -245,22 +245,28 @@ label {
 
 @media (max-width: 768px) {
     body {
-        width: 90%;
+        width: 100%;
         height: auto;
     }
     .calculator {
         flex-direction: column;
         height: auto;
         width: 100%;
-        padding: 2rem 0;
     }
+
+    h1{
+        font-size: 1.3rem;
+        flex-direction: row;
+    }
+    
     .form-section, .results-section {
-        width: 90%;
+        width: 100%;
         height: auto;
-        margin: 1rem auto;
     }
     .results-section {
-        border-radius: 25px;
+        border-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;  
     }
 }
 
