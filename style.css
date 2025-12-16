@@ -243,5 +243,26 @@ label {
     padding: 1.5rem;
 }
 
+@media (max-width: 768px) {
+    body {
+        width: 90%;
+        height: auto;
+    }
+    .calculator {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding: 2rem 0;
+    }
+    .form-section, .results-section {
+        width: 90%;
+        height: auto;
+        margin: 1rem auto;
+    }
+    .results-section {
+        border-radius: 25px;
+    }
+}
+
 .attribution { font-size: 11px; text-align: center; padding-top: 4.5rem;}
 .attribution a { color: hsl(228, 45%, 44%); }
